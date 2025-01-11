@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  fontsize: 10px;
+}
+body{
+    background-color: red
+    height:1000px;
+    background: red;
+}
+header{
+    height:50vh;
+    width: 100%;
+    background-color:blue;
+    background:linear-gradient( to left, blue ,blue 33.3333% , yellow 33.3333%, yellow 66.6666% ,   gray 66.66666%)
+    /* background-image: linear-gradient(to right bottom , blue ,red) */
+    
+}
