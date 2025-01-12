@@ -7,8 +7,234 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-     
+    <div
+      style="
+        width: 90%;
+        height: 800px;
+        border: 2px solid gray;
+        margin: 20px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: -15px;
+          left: 100px;
+
+          height: 30px;
+          background-color: blue;
+          color: white;
+          display: inline-block;
+          z-index: 2;
+          padding: 2px 15px;
+          line-height: 30px;
+          font-size: 20px;
+        "
+      >
+        personal data
+      </div>
+
+      <form style="width: 90%; margin-top: 50px">
+        <fieldset
+          style="
+            border: 1px solid gray;
+            height: 150px;
+            margin: 0 auto;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: end;
+            padding: 0 0 20px 0;
+            position: relative;
+            ::after {
+              content: 'your name';
+            }
+          "
+        >
+          <span
+            style="
+              /* width: 50px; */
+              height: 30px;
+              position: absolute;
+              line-height: 30px;
+              top: -15px;
+              left: 40px;
+              background-color: blue;
+              color: white;
+              display: inline-block;
+              padding: 0 10px;
+            "
+            >your name</span
+          >
+          <fieldset
+            style="padding: 0; margin: 0; max-height: fit-content; width: 100%"
+          >
+            <label
+              for="fname"
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              >First Name</label
+            >
+            <input
+              type="text"
+              placeholder="enter your name"
+              id="fname"
+              name="userfirstname"
+            />
+          </fieldset>
+
+          <fieldset
+            style="
+              padding: 0;
+              margin: 0;
+              max-height: fit-content;
+              margin-top: 2px;
+            "
+          >
+            <label
+              for="Sname"
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              >Second Name</label
+            >
+            <input
+              type="text"
+              placeholder="enter ur Secondname"
+              id="Sname"
+              name="usersecondname"
+            />
+          </fieldset>
+        </fieldset>
+        <fieldset style="padding: 100px 0 0 0">
+          <fieldset style="margin: 2px 0 0 0">
+            <label
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              for="unumber"
+              >your number:</label
+            >
+            <input
+              type="text"
+              placeholder="enter ur number"
+              id="unumber"
+              name="usernumber"
+            />
+          </fieldset>
+          <fieldset style="margin: 2px 0 0 0">
+            <label
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              for="umail"
+              >E-mail:</label
+            >
+            <input
+              type="email"
+              placeholder="enter ur email"
+              id="umail"
+              name="uemail"
+            />
+          </fieldset>
+          <fieldset style="margin: 2px 0 0 0">
+            <label
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              for="upass"
+              >Password:</label
+            >
+            <input
+              type="text"
+              placeholder="enter ur password"
+              id="upass"
+              name="upass"
+            />
+          </fieldset>
+          <fieldset style="margin: 2px 0 0 0">
+            <label
+              style="
+                width: 100px;
+                height: fit-content;
+                padding: 0 15px;
+                display: inline-block;
+              "
+              for="rpass"
+              >re-Password</label
+            >
+            <input
+              type="password"
+              placeholder="re-enter ur password"
+              id="rpass"
+              name="ure-pass"
+            />
+          </fieldset>
+        </fieldset>
+        <fieldset style="margin-top: 100px">
+          <span style="display: block">choose your gender</span>
+          <fieldset>
+            <input type="radio" value="male" id="gmale" name="gender" />
+            <label for="gmale" style="display: inline-block; width: 45px"
+              >male</label
+            >
+          </fieldset>
+          <fieldset>
+            <input type="radio" value="female" id="gfemale" name="gender" />
+            <label for="gfemale" style="display: inline-block; width: 45px"
+              >female</label
+            > 
+          </fieldset>
+          <fieldset style="margin-top: 50px">
+            <input type="checkbox" value="student" id="ustatus" name="status" />
+            <label for="ustatus" style="display: inline-block; width: 45px"
+              >student</label
+            >
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" value="grauated" id="ugraud" name="status" />
+            <label for="ugraud" style="display: inline-block; width: 45px"
+              >Grauated</label
+            >
+          </fieldset>
+        </fieldset>
+        <select name="grauateaU" style="display: block">
+          <option vlaue="AUC">AUC</option>
+          <option vlaue="BUC">BUC</option>
+          <option vlaue="SUC">SUC</option>
+        </select>
+        <button
+          type="submit"
+          style="
+            display: inline-block;
+            padding: 5px 6px;
+            font-size: 18px;
+            margin-top: 10px;
+          "
+        >
+          submit
+        </button>
+      </form>
     </div>
   </body>
 </html>
